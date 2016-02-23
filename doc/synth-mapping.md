@@ -73,7 +73,7 @@ oscFett = toOscShape fett
 phaser = makeF oscFett "phaser"
 ```
 
-And that's it. If you really cannot wait, this is the minimal working example of your own synth mapping. One last step is needed for really making use of it, namely telling the tidal-midi package about your module. Just add a line to `tidal-midi.cabal` under the key `exposed-modules`:
+And that's it. If you really cannot wait, this is the minimal working example of your own synth mapping. One last step is needed for really making use of it, namely telling the tidal-midi package about your module. Just add a line to `tidal-midi.cabal` or `tidal.cabal` (if running version 0.7 or later) under the key `exposed-modules`:
 
 ```
 ...
@@ -92,7 +92,7 @@ library
 ...
 ```
 
-After that do a cabal install within tidal-midi source.
+After that do a cabal install within tidal-midi / tidal source.
 
 ### Using our custom synth mapping in emacs
 
